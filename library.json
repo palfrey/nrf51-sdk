@@ -1,0 +1,47 @@
+{
+  "name": "nrf51-sdk",
+  "version": "2.2.0",
+  "description": "Module to contain files provided by the nordic nRF51 SDK",
+  "keywords": [
+    "nordic",
+    "nrf51",
+    "sdk"
+  ],
+  "author": "",
+  "repository": {
+    "url": "git@github.com:ARMmbed/nrf51-sdk.git",
+    "type": "git"
+  },
+  "build":{
+    "flags": [
+      "-Isource/nordic_sdk/components/ble/ble_radio_notification",
+      "-Isource/nordic_sdk/components/ble/ble_services/ble_dfu",
+      "-Isource/nordic_sdk/components/ble/common",
+      "-Isource/nordic_sdk/components/ble/device_manager",
+      "-Isource/nordic_sdk/components/ble/device_manager/config",
+      "-Isource/nordic_sdk/components/ble/peer_manager",
+      "-Isource/nordic_sdk/components/device",
+      "-Isource/nordic_sdk/components/drivers_nrf/ble_flash",
+      "-Isource/nordic_sdk/components/drivers_nrf/delay",
+      "-Isource/nordic_sdk/components/drivers_nrf/hal",
+      "-Isource/nordic_sdk/components/drivers_nrf/pstorage",
+      "-Isource/nordic_sdk/components/drivers_nrf/pstorage/config",
+      "-Isource/nordic_sdk/components/libraries/bootloader_dfu",
+      "-Isource/nordic_sdk/components/libraries/bootloader_dfu/hci_transport",
+      "-Isource/nordic_sdk/components/libraries/crc16",
+      "-Isource/nordic_sdk/components/libraries/hci",
+      "-Isource/nordic_sdk/components/libraries/scheduler",
+      "-Isource/nordic_sdk/components/libraries/timer",
+      "-Isource/nordic_sdk/components/libraries/util",
+      "-Isource/nordic_sdk/components/libraries/fds",
+      "-Isource/nordic_sdk/components/libraries/fstorage",
+      "-Isource/nordic_sdk/components/libraries/experimental_section_vars",
+      "-Isource/nordic_sdk/components/softdevice/common/softdevice_handler",
+      "-Isource/nordic_sdk/components/softdevice/s130/headers",
+      "-Isource/nordic_sdk/components/toolchain"
+    ],
+    "extraScript": "platformio_extra.py"
+  },
+  "frameworks": "mbed",
+  "platforms": "nordicnrf51"
+}
